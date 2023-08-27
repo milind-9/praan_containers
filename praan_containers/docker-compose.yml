@@ -1,0 +1,14 @@
+version: '3'
+services:
+  authservice:
+    build:
+      context: ./auth_service
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+  deviceservice:
+    build:
+      context: ./device_service
+      dockerfile: Dockerfile
+    ports:
+      - "4001:4001"
