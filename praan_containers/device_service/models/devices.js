@@ -7,6 +7,9 @@ const deviceSchema = mongoose.Schema({
         type: Date,
         default: new Date(),
     },
+    device:{
+        type: String
+    },
     h:{
         type: String
     },
