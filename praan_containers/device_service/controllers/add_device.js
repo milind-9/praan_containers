@@ -48,8 +48,7 @@ exports.get_device = async(req,res)=>{
         
     }
 
-
-        exports.get_all_device = async(req,res)=>{
+ exports.get_all_device = async(req,res)=>{
         const options = {}
         const page = parseInt(req.query.page) || 1;
 const perPage = parseInt(req.query.perPage) || 10;
