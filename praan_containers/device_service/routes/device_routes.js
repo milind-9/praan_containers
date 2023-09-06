@@ -16,4 +16,6 @@ router.route('').get(isAuthenticateUser,require('../controllers/add_device').get
 router.route('/:device_id').patch(isAuthenticateUser,require('../controllers/add_device').updateDevice)
 
 router.route('/upload').post(upload.single('file'),isAuthenticateUser,require('../controllers/csv').upload_data)
+
+router.route('/chart').get(isAuthenticateUser,require('../controllers/add_device').get_chart)
 module.exports = router
